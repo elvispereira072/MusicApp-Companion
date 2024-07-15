@@ -14,6 +14,7 @@
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
+<<<<<<< HEAD
 android:padding="16dp"> <!-- Adiciona espaçamento de 16dp -->
 
 <!-- Toolbar -->
@@ -81,6 +82,83 @@ android:padding="16dp"> <!-- Adiciona espaçamento de 16dp -->
     android:textStyle="italic"
     android:layout_marginTop="16dp"/>
 
+=======
+android:gravity="center"
+android:padding="16dp"> <!-- Adiciona espaçamento de 16dp -->
+
+<!-- Toolbar -->
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/your_background_color"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <!-- Título e Ícone da Toolbar -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_toolbar_icon" />
+</androidx.appcompat.widget.Toolbar>
+
+<!-- FrameLayout para conteúdo dinâmico do Fragment -->
+<FrameLayout
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" >
+
+    <TextView
+        android:layout_width="393dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:text="Sejam bem vindos"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+</FrameLayout>
+
+<!-- Botão com gradiente -->
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Botão com Gradiente"
+    android:textColor="@android:color/white"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:paddingStart="24dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="24dp"
+    android:paddingBottom="12dp"
+    android:layout_margin="16dp"
+    android:background="@drawable/gradient_button"
+    android:elevation="4dp"/>
+
+<!-- Layout para o texto de boas-vindas -->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- Texto "Sejam bem vindos" com borda gradiente -->
+
+    <!-- Descrição adicional -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aproveite sua experiência conosco"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
+</LinearLayout>
+
+>>>>>>> 2e185e627452730a6bc0e5313b133e9488b9625a
 </LinearLayout>
 
     <!-- Navigation Drawer -->
@@ -91,5 +169,12 @@ android:layout_height="match_parent"
 android:layout_gravity="start"
 app:headerLayout="@layout/nav_header"
 app:menu="@menu/nav_menu" />
+<<<<<<< HEAD
+=======
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+>>>>>>> 2e185e627452730a6bc0e5313b133e9488b9625a
 
     </androidx.drawerlayout.widget.DrawerLayout>
