@@ -1,182 +1,243 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- Primeiro LinearLayout -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#05ddf1">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="16dp">
+    <ImageView
+        android:id="@+id/productImage1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/guitar"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:contentDescription="Guitar"
+        android:layout_marginBottom="10dp" />
 
-        <!-- Produto 1: Guitarra Elétrica -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/background_product"
-            android:orientation="vertical"
-            android:padding="16dp"
-            android:elevation="4dp"
-            android:layout_marginBottom="16dp">
+    <TextView
+        android:id="@+id/productName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guitar"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp" />
 
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/product_image_description"
-                android:scaleType="centerCrop"
-                android:src="@drawable/guitar"
-                android:layout_marginBottom="16dp" />
+    <TextView
+        android:id="@+id/productDescription1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Guitarra Elétrica"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+    <TextView
+        android:id="@+id/productPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: R$ 600.00"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp"
-                android:text="R$ 1500,00"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
+    <TextView
+        android:id="@+id/productDiscount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discount: 10%"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="24dp"
-                android:background="@color/button_color"
-                android:onClick="onBuyButtonClick"
-                android:paddingStart="24dp"
-                android:paddingTop="12dp"
-                android:paddingEnd="24dp"
-                android:paddingBottom="12dp"
-                android:text="Comprar Agora"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="18sp" />
-        </LinearLayout>
+    <TextView
+        android:id="@+id/discountedPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discounted price: R$ 540.00"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
 
-        <!-- Produto 2: Contrabaixo -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/background_product"
-            android:orientation="vertical"
-            android:padding="16dp"
-            android:elevation="4dp"
-            android:layout_marginBottom="16dp">
+    <Button
+        android:id="@+id/buyButton1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Comprar Agora"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cta_button_background" />
 
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/product_image_description"
-                android:scaleType="centerCrop"
-                android:src="@drawable/contrabaixo"
-                android:layout_marginBottom="16dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                android:textColor="@color/dark_gray"
-                android:textSize="16sp"
-                android:gravity="center" />
+    <!-- Segundo LinearLayout -->
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center"
+android:padding="20dp"
+android:background="#05ddf1">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp"
-                android:text="R$ 2500,00"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
+<ImageView
+    android:id="@+id/productImage2"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/contrabaixo"
+    android:layout_gravity="center"
+    android:scaleType="centerCrop"
+    android:contentDescription="Contrabaixo"
+    android:layout_marginBottom="10dp" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="24dp"
-                android:background="@color/button_color"
-                android:onClick="onBuyButtonClick"
-                android:paddingStart="24dp"
-                android:paddingTop="12dp"
-                android:paddingEnd="24dp"
-                android:paddingBottom="12dp"
-                android:text="Comprar Agora"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="18sp" />
-        </LinearLayout>
+<TextView
+    android:id="@+id/productName2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Contrabaixo"
+    android:textSize="18sp"
+    android:textColor="#ffffff"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp" />
 
-        <!-- Produto 3: Bateria -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="16dp"
-            android:padding="16dp"
-            android:background="@drawable/background_product"
-            android:elevation="4dp"
-            android:layout_marginBottom="16dp">
+<TextView
+    android:id="@+id/productDescription2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    android:textColor="#ffffff"
+    android:textSize="16sp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp" />
 
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:src="@drawable/drums"
-                android:contentDescription="@string/product_image_description"
-                android:scaleType="centerCrop"
-                android:layout_gravity="center"
-                android:layout_marginBottom="16dp" />
+<TextView
+    android:id="@+id/productPrice2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Price: R$ 800.00"
+    android:textColor="#ffffff"
+    android:textSize="16sp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bateria"
-                android:textSize="24sp"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:layout_marginTop="16dp"
-                android:layout_gravity="center" />
+<TextView
+    android:id="@+id/productDiscount2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Discount: 15%"
+    android:textColor="#ffffff"
+    android:textSize="16sp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                android:textSize="16sp"
-                android:textColor="@color/dark_gray"
-                android:layout_marginTop="8dp"
-                android:gravity="center"
-                android:layout_gravity="center" />
+<TextView
+    android:id="@+id/discountedPrice2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Discounted price: R$ 680.00"
+    android:textColor="#ffffff"
+    android:textSize="16sp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="20dp" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Comprar Agora"
-                android:textColor="@android:color/white"
-                android:background="@color/button_color"
-                android:textAllCaps="false"
-                android:paddingStart="24dp"
-                android:paddingEnd="24dp"
-                android:paddingTop="12dp"
-                android:paddingBottom="12dp"
-                android:textSize="18sp"
-                android:layout_marginTop="24dp"
-                android:layout_gravity="center"
-                android:onClick="onBuyButtonClick" />
-        </LinearLayout>
+<Button
+    android:id="@+id/buyButton2"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="Comprar Agora"
+    android:background="@drawable/cta_button_background"
+    android:textColor="#ffffff"
+    android:layout_gravity="center" />
+</LinearLayout>
 
-    </LinearLayout>
-</ScrollView>
+    <!-- Terceiro LinearLayout -->
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:gravity="center"
+android:padding="20dp"
+android:background="#05ddf1">
+
+<ImageView
+    android:id="@+id/productImage3"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/drums"
+    android:layout_gravity="center"
+    android:scaleType="centerCrop"
+    android:contentDescription="Drums"
+    android:layout_marginBottom="10dp" />
+
+<TextView
+    android:id="@+id/productName3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Drums"
+    android:textSize="18sp"
+    android:textColor="#ffffff"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp" />
+
+<TextView
+    android:id="@+id/productDescription3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    android:textColor="#ffffff"
+    android:textSize="16sp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp" />
+
+<TextView
+    android:id="@+id/productPrice3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Price: R$ 1000.00"
+    android:textColor="#ffffff"
+    android:textSize="16sp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp" />
+
+<TextView
+    android:id="@+id/productDiscount3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Discount: 20%"
+    android:textColor="#ffffff"
+    android:textSize="16sp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp" />
+
+<TextView
+    android:id="@+id/discountedPrice3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Discounted price: R$ 800.00"
+    android:textColor="#ffffff"
+    android:textSize="16sp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="20dp" />
+
+<Button
+    android:id="@+id/buyButton3"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="Comprar Agora"
+    android:background="@drawable/cta_button_background"
+    android:textColor="#ffffff"
+    android:layout_gravity="center" />
+</LinearLayout>
+
